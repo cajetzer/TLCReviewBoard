@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{bb71bf5c-8d12-4db1-a4f3-bd5d5e99769f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="tlc_name" select="1" icon="1" preview="1">
+        <row name="result" id="tlc_scenarioid">
+          <cell name="tlc_name" width="232" />
+          <cell name="tlc_customertext" width="217" />
+          <cell name="tlc_scenariosponsorid" width="134" />
+          <cell name="tlc_scenariostatus" width="123" />
+          <cell name="tlc_desiredendstate" width="298" />
+          <cell name="tlc_desiredbusinessoutcomes" width="300" />
+          <cell name="createdon" width="104" />
+          <cell name="createdby" width="100" />
+          <cell name="modifiedon" width="137" />
+          <cell name="modifiedby" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tlc_scenario">
+          <attribute name="tlc_scenarioid" />
+          <attribute name="tlc_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="modifiedon" />
+          <attribute name="tlc_scenariostatus" />
+          <attribute name="tlc_scenariosponsorid" />
+          <attribute name="createdby" />
+          <attribute name="modifiedby" />
+          <attribute name="tlc_desiredbusinessoutcomes" />
+          <order attribute="createdon" descending="true" />
+          <attribute name="tlc_desiredendstate" />
+          <attribute name="tlc_customertext" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="All Scenarios" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_tlc_scenario" />
+  <EntityRelationship Name="lk_tlc_scenario_createdby" />
+  <EntityRelationship Name="lk_tlc_scenario_modifiedby" />
+  <EntityRelationship Name="owner_tlc_scenario" />
+  <EntityRelationship Name="team_tlc_scenario" />
+  <EntityRelationship Name="tlc_Scenario_ScenarioSponsorId_SystemUser" />
+  <EntityRelationship Name="tlc_tlc_scenario_tlc_AssignedCoach_system" />
+  <EntityRelationship Name="user_tlc_scenario" />
+</EntityRelationships>

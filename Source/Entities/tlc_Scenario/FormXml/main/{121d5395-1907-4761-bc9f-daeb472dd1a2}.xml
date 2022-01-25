@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{121d5395-1907-4761-bc9f-daeb472dd1a2}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{73d3af49-d41d-44ba-a0ab-a34dc414f9fe}" IsUserDefined="1" name="general_tab">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{df351c6a-5e37-4518-be92-bfc55901a6e5}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6f4047b7-757f-40ec-9b1f-3223a5da613b}">
+                        <labels>
+                          <label description="Scenario Summary" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tlc_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1392cc60-39d4-490a-803f-67eae94ece3f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Customer and TPID" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_customertext" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tlc_customertext" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a98e33c0-3881-4e37-9362-975c49e2faa9}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Scenario Sponsor (MSFT)" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_scenariosponsorid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tlc_scenariosponsorid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{796eb76a-a5f2-4682-ac57-11271572ca97}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Scenario Status" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_scenariostatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tlc_scenariostatus" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{107786f7-305e-4089-9c88-3c02ac81f3b6}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Assigned Coach" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_assignedcoach" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tlc_assignedcoach" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="outcomes_section" id="f677ea56-0da7-4e08-ad9f-4fff1c68de66" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Top" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Outcomes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8dd1d87a-5aa2-4d73-bfe9-703d240d6b54}" locklevel="0" colspan="1" rowspan="10">
+                        <labels>
+                          <label description="Desired Business Outcomes" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_desiredbusinessoutcomes" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="tlc_desiredbusinessoutcomes" disabled="false" uniqueid="{52622c8d-4694-cea8-b0e8-bc156e4269d5}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{3f29898d-5a55-42bb-bc66-55f6ee36745c}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="endstate_tab" id="10143b88-3ab2-4162-bc39-dc549d1c052c" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Top" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="End State" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{bc8acc36-010b-4168-b4da-935a7e102a92}" locklevel="0" colspan="1" rowspan="10">
+                        <labels>
+                          <label description="Desired End State" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_desiredendstate" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="tlc_desiredendstate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{9ec1a734-515c-4f19-aefc-debd0379ad86}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" id="{fe44ac52-f28b-464b-9e9d-974fb5f74dee}" IsUserDefined="0" height="auto">
+                  <labels>
+                    <label description="Notes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="false" rowspan="15" auto="false" id="{4bb8a768-1624-49ab-adc0-eede37cdbd93}">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}">
+                          <parameters>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{4835ccf6-395e-4d2b-8d16-7a518fcc50a1}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{02540914-447d-4838-afb2-b706213485ca}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{bb53a4b8-d51b-4306-8ba0-05a16a48f57f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9f9ac064-5655-4f16-a953-ee76de0fdd32}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{12d1bacd-584a-484e-b70e-7eaa7991181e}" visible="true" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{0caa2001-2b4d-4aec-a74b-cb163890dd54}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{1046b032-0512-4dce-b042-05916fe99c0c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1372e399-f85d-4732-b850-6e3ec3229b78}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{6660d8f1-9b8d-49da-8d07-a87e32d50f36}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar />
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <DisplayConditions FallbackForm="true" Order="0">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+        <Role Id="{B0033078-ED0C-EC11-B6E6-00224822D42B}" />
+        <Role Id="{86950E47-EF0C-EC11-B6E6-00224822D42B}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Scenario Review" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>
