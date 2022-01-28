@@ -71,7 +71,7 @@
     <RolePrivilege name="prvReadSystemApplicationMetadata" level="Global" />
     <RolePrivilege name="prvReadSystemForm" level="Global" />
     <RolePrivilege name="prvReadTeam" level="Global" />
-    <RolePrivilege name="prvReadtlc_Scenario" level="Basic" />
+    <RolePrivilege name="prvReadtlc_Scenario" level="Global" />
     <RolePrivilege name="prvReadTraceLog" level="Global" />
     <RolePrivilege name="prvReadTransactionCurrency" level="Global" />
     <RolePrivilege name="prvReadTranslationProcess" level="Global" />
