@@ -111,6 +111,21 @@
             </column>
             <column width="50%">
               <sections>
+                <section name="general_tab_section_6" id="76cbb3fb-5378-4bf0-81bb-2c14d6facb25" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Linked OneNote" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{201edf86-39ec-461e-9644-b393ed7377ba}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="OneNote Scenario Notes (URL)" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_onenotescenarionotesurl" classid="{71716B6C-711E-476C-8AB8-5D11542BFB47}" datafieldname="tlc_onenotescenarionotesurl" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
                 <section showlabel="false" showbar="false" id="{fe44ac52-f28b-464b-9e9d-974fb5f74dee}" IsUserDefined="0" height="auto">
                   <labels>
                     <label description="Notes" languagecode="1033" />
