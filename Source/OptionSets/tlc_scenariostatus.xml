@@ -30,15 +30,7 @@
     </option>
     <option value="120000002" ExternalValue="" Color="">
       <labels>
-        <label description="Active review" languagecode="1033" />
-      </labels>
-      <Descriptions>
-        <Description description="" languagecode="1033" />
-      </Descriptions>
-    </option>
-    <option value="120000003" ExternalValue="" Color="">
-      <labels>
-        <label description="Feedback needed" languagecode="1033" />
+        <label description="In Process - Curbside Consult" languagecode="1033" />
       </labels>
       <Descriptions>
         <Description description="" languagecode="1033" />
@@ -46,7 +38,7 @@
     </option>
     <option value="120000007" ExternalValue="" Color="">
       <labels>
-        <label description="Committed" languagecode="1033" />
+        <label description="In Process - Solution Advisor" languagecode="1033" />
       </labels>
       <Descriptions>
         <Description description="" languagecode="1033" />
@@ -54,7 +46,7 @@
     </option>
     <option value="120000004" ExternalValue="" Color="">
       <labels>
-        <label description="Solution options ready" languagecode="1033" />
+        <label description="In Process - Solutioning Hackathon" languagecode="1033" />
       </labels>
       <Descriptions>
         <Description description="" languagecode="1033" />
