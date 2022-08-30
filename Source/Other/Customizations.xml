@@ -21,6 +21,13 @@
       <statecode>0</statecode>
       <statuscode>1</statuscode>
     </connectionreference>
+    <connectionreference connectionreferencelogicalname="tlc_sharedsendmail_2ebb8">
+      <connectionreferencedisplayname>Mail TechReview-2ebb8</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_sendmail</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
     <connectionreference connectionreferencelogicalname="tlc_sharedteams_ea2db">
       <connectionreferencedisplayname>Microsoft Teams</connectionreferencedisplayname>
       <connectorid>/providers/Microsoft.PowerApps/apis/shared_teams</connectorid>

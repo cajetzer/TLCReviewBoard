@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.21121.125" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.22073.190" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>TechReview</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Tech Review" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.4</Version>
+    <Version>1.1.0.5</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>HlsTechLeadershipCouncil</UniqueName>
@@ -92,12 +92,18 @@
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required type="1" schemaName="appusersetting" displayName="Model-Driven App User Setting" solution="AppModule (9.1.21115.211130002)" />
+        <Required type="1" schemaName="appusersetting" displayName="Model-Driven App User Setting" solution="AppModule (9.1.22073.220708001)" />
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="bot" displayName="Chatbot" solution="PowerVirtualAgents (2.0.0.87)">
-          <package>msdynce_CustomerCareIntelligenceBots_Anchor (2.0.0.87)</package>
+        <Required type="1" schemaName="bot" displayName="Chatbot" solution="PowerVirtualAgents (2.0.0.175)">
+          <package>msdynce_CustomerCareIntelligenceBots_Anchor (2.0.0.175)</package>
+        </Required>
+        <Dependent type="1" schemaName="systemuser" displayName="User" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="msfp_survey" displayName="Customer Voice survey" solution="MicrosoftFormsPro (2.0.0.35)">
+          <package>MicrosoftFormsPro (2.0.0.35)</package>
         </Required>
         <Dependent type="1" schemaName="systemuser" displayName="User" />
       </MissingDependency>
@@ -110,7 +116,7 @@
         <Dependent type="80" schemaName="tlc_ReviewBoardRequests" displayName="Review Board Requests" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2111.5017)" />
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2207.3015)" />
         <Dependent type="60" displayName="Review Board Request" parentDisplayName="Scenario" id="{1501d341-3812-ec11-b6e6-000d3a5671e3}" />
       </MissingDependency>
     </MissingDependencies>
