@@ -1,0 +1,173 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "tlc_sharedcommondataserviceforapps_633bb"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_office365": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "tlc_sharedoffice365_b5950"
+        },
+        "api": {
+          "name": "shared_office365"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "metadata": {
+            "operationMetadataId": "ed719a7a-a082-4977-afc8-73057009f1fd"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 4,
+              "subscriptionRequest/entityname": "tlc_scenario",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filteringattributes": "tlc_scenariostatus"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "If_Scenario_Status_=_Submitted": {
+          "actions": {
+            "Get_Sponsor_details": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "18e04172-5b46-4540-a34c-f8e9643a3d7d"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_commondataserviceforapps",
+                  "operationId": "GetItem",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                },
+                "parameters": {
+                  "entityName": "systemusers",
+                  "recordId": "@triggerOutputs()?['body/_tlc_scenariosponsorid_value']"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Send_an_email_(V2)": {
+              "runAfter": {
+                "Get_Submitting_User_details": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "850e628a-08bb-4331-94d1-388e938b0f97"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_office365",
+                  "operationId": "SendEmailV2",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+                },
+                "parameters": {
+                  "emailMessage/To": "@{outputs('Get_Sponsor_details')?['body/internalemailaddress']};@{outputs('Get_Submitting_User_details')?['body/internalemailaddress']}",
+                  "emailMessage/Subject": "Successful submission to Cross Solution Review Board",
+                  "emailMessage/Body": "<p>Thank you for submitting your customer scenario to the Cross Solution Review Board:<br>\n<br>\n<em></em><em>@{triggerOutputs()?['body/tlc_name']}</em><em><br>\n</em><em>@{triggerOutputs()?['body/tlc_customertext']}</em><em></em><br>\n<br>\n<strong>What happens next?<br>\n</strong>The Review Board will review the details of your submission, and will reach out shortly (hopefully within a day or two) with next steps. If your customer scenario is a good fit, you will be invited to consult with our Expert Panel in our weekly Office Hours.<br>\n<br>\nLearn more about us on the <a href=\"https://microsoft.sharepoint.com/teams/HLSTechLeadership/SitePages/Project--Cross-Cloud-Tech-Review-Board.aspx?xsdata=MDV8MDF8fDk1ODE3NzE3OTNjMjQxMmE4ZGY1MDhkYThjM2I1ZTJkfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2Mzc5NzY0ODM4MzczNDkzNjV8R29vZHxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKV0lqb2lNQzR3TGpBd01EQWlMQ0pRSWpvaVYybHVNeklpTENKQlRpSTZJazkwYUdWeUlpd2lWMVFpT2pFeGZRPT18MXxNVGs2VmxwMmRWTlhZWEZ3U1RoWlprSnZRMG81ZDJjMVpFMUVhR1JKU0dGNVltMXVOa0puVXpka2VtRmFOREZBZEdoeVpXRmtMblJoWTNZeXx8&amp;sdata=aDFnYVdmc2ZueWN0VEUwc2hHdnJyM0hmUnk2ejQwMUxNSUdOUDFZdkJHTT0%3D\">Cross Solution Review Board</a> SharePoint site<br>\nJoin the <a href=\"https://teams.microsoft.com/l/team/19%3aVZvuSWaqpI8YfBoCJ9wg5dMDhdIHaybmn6BgS7dzaZ41%40thread.tacv2/conversations?groupId=fc20461a-f388-44b7-8291-e4c711631a48&amp;tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47\">Cross Solution Review Board Team</a> to engage and collaborate<br>\nYou can review or edit your submission within the <a href=\"https://hlstechreview.crm.dynamics.com/main.aspx?appid=67a00894-2222-ec11-b6e5-000d3a375e98&amp;pagetype=entitylist&amp;etn=tlc_scenario&amp;viewid=bb71bf5c-8d12-4db1-a4f3-bd5d5e99769f&amp;viewType=1039\">Review Board Request Tool</a>&nbsp;</p>",
+                  "emailMessage/Importance": "Normal"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Get_Submitting_User_details": {
+              "runAfter": {
+                "Get_Sponsor_details": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "169fdbd3-94f4-441a-8e28-4e2256f643cf"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_commondataserviceforapps",
+                  "operationId": "GetItem",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                },
+                "parameters": {
+                  "entityName": "systemusers",
+                  "recordId": "@triggerOutputs()?['body/_modifiedby_value']"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Terminate_2": {
+              "runAfter": {
+                "Send_an_email_(V2)": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "c1c30da4-45d9-4160-bd4c-072caee27257"
+              },
+              "type": "Terminate",
+              "inputs": {
+                "runStatus": "Succeeded"
+              }
+            }
+          },
+          "runAfter": {},
+          "else": {
+            "actions": {
+              "Terminate": {
+                "runAfter": {},
+                "metadata": {
+                  "operationMetadataId": "361c6714-4b28-4b65-b195-19d1716f7b37"
+                },
+                "type": "Terminate",
+                "inputs": {
+                  "runStatus": "Cancelled"
+                }
+              }
+            }
+          },
+          "expression": {
+            "equals": [
+              "@triggerOutputs()?['body/tlc_scenariostatus']",
+              120000001
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "915d5723-581f-4f41-a700-be75eeca76d5"
+          },
+          "type": "If"
+        }
+      }
+    }
+  },
+  "schemaVersion": "1.0.0.0"
+}

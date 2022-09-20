@@ -6,7 +6,7 @@
       <LocalizedName description="Tech Review" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.1.0.9</Version>
+    <Version>1.1.0.11</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>HlsTechLeadershipCouncil</UniqueName>
@@ -87,6 +87,7 @@
       <RootComponent type="29" id="{226a7c88-2e22-ec11-b6e6-000d3a4d7c9e}" behavior="0" />
       <RootComponent type="29" id="{34bbffa3-8362-ec11-8f8f-0022483120e7}" behavior="0" />
       <RootComponent type="29" id="{3ce5252d-8462-ec11-8f8f-0022483120e7}" behavior="0" />
+      <RootComponent type="29" id="{f8edcb60-2139-ed11-9db0-000d3a8aae43}" behavior="0" />
       <RootComponent type="62" schemaName="tlc_ReviewBoardRequests" behavior="0" />
       <RootComponent type="80" schemaName="tlc_ReviewBoardRequests" behavior="0" />
     </RootComponents>

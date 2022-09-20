@@ -1,0 +1,11 @@
+<environmentvariabledefinition schemaname="tlc_NewRequestAlertChannel">
+  <defaultvalue>19:9b3390f9b3ff4eb0821164774eeaae35@thread.tacv2</defaultvalue>
+  <displayname default="New Request Alert Channel">
+    <label description="New Request Alert Channel" languagecode="1033" />
+  </displayname>
+  <introducedversion>1.1.0.10</introducedversion>
+  <iscustomizable>1</iscustomizable>
+  <isrequired>0</isrequired>
+  <secretstore>0</secretstore>
+  <type>100000000</type>
+</environmentvariabledefinition>

@@ -14,9 +14,30 @@
   <AppModules />
   <EntityDataProviders />
   <connectionreferences>
+    <connectionreference connectionreferencelogicalname="tlc_sharedcommondataserviceforapps_633bb">
+      <connectionreferencedisplayname>Microsoft Dataverse TechReview-633bb</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
     <connectionreference connectionreferencelogicalname="tlc_sharedcommondataserviceforapps_ef4d7">
       <connectionreferencedisplayname>Microsoft Dataverse</connectionreferencedisplayname>
       <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="tlc_sharedoffice365_b5950">
+      <connectionreferencedisplayname>Office 365 Outlook TechReview-b5950</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_office365</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="tlc_sharedoffice365users_2ae73">
+      <connectionreferencedisplayname>Office 365 Users TechReview-2ae73</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_office365users</connectorid>
       <iscustomizable>1</iscustomizable>
       <statecode>0</statecode>
       <statuscode>1</statuscode>
