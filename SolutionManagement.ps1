@@ -9,9 +9,9 @@ pac auth select --index 3
 # EXPORT SOLUTIONS
 # Set these before running the script
 
-$solutionDir = ".\Solutions"
-$solutionVersion = "1.0.0.1"
-$newSolutionVersion = "1.0.0.2"
+$solutionDir = ".\Solutions\"
+$solutionVersion = "1.1.0.9"
+$newSolutionVersion = "1.1.0.10"
 $solutionName = "TechReview"
 
 # The following commands execute the export using the variables above
@@ -24,7 +24,7 @@ pac solution online-version --solution-name ${solutionName} --solution-version $
 # Set these before running the script
 
 $solutionDir = "C.\Solutions\"
-$solutionVersion = "1.0.0.1"
+$solutionVersion = "1.2.0.9"
 $solutionName = "TechReview"
 
 # The following commands execute the export using the variables above
