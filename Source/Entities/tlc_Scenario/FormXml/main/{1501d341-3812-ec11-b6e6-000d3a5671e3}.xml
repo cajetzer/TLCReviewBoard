@@ -14,11 +14,27 @@
           <columns>
             <column width="50%">
               <sections>
-                <section showlabel="false" showbar="false" IsUserDefined="0" id="{df351c6a-5e37-4518-be92-bfc55901a6e5}" labelid="{41adbe2e-c1f4-4e3c-b298-86a2a9278fa5}" name="general" visible="true">
+                <section showlabel="true" showbar="false" IsUserDefined="0" id="{df351c6a-5e37-4518-be92-bfc55901a6e5}" labelid="{41adbe2e-c1f4-4e3c-b298-86a2a9278fa5}" name="general" visible="true">
                   <labels>
-                    <label description="General" languagecode="1033" />
+                    <label description="NOTE: This entry will not be submitted until Ready to Submit is set to Yes" languagecode="1033" />
                   </labels>
                   <rows>
+                    <row>
+                      <cell id="{6d562e00-28fb-4a78-931b-1e6adf7d35fa}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Ready to Submit?" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_submitready" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="tlc_submitready" disabled="false" uniqueid="{c55c4bfc-c89b-4ca8-b283-90879cd44c9c}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e3a2a6fa-e8ef-45df-93d0-ce710daee012}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Scenario Status" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_scenariostatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tlc_scenariostatus" disabled="true" />
+                      </cell>
+                    </row>
                     <row>
                       <cell id="{6f4047b7-757f-40ec-9b1f-3223a5da613b}" labelid="{a7c21a99-ab50-44fb-a6b8-55f4b9485b5d}" visible="true" colspan="1" rowspan="1">
                         <labels>
@@ -41,14 +57,6 @@
                           <label description="Scenario Sponsor (MSFT)" languagecode="1033" />
                         </labels>
                         <control id="tlc_scenariosponsorid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tlc_scenariosponsorid" disabled="false" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{6d562e00-28fb-4a78-931b-1e6adf7d35fa}" locklevel="0" colspan="1" rowspan="1">
-                        <labels>
-                          <label description="Save as Draft or Ready to Submit?" languagecode="1033" />
-                        </labels>
-                        <control id="tlc_submitready" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="tlc_submitready" disabled="false" uniqueid="{c55c4bfc-c89b-4ca8-b283-90879cd44c9c}" />
                       </cell>
                     </row>
                   </rows>
