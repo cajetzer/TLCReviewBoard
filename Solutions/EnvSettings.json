@@ -2,7 +2,29 @@
   "EnvironmentVariables": [
     {
       "SchemaName": "tlc_NewRequestAlertChannel",
-      "Value": "19:VZvuSWaqpI8YfBoCJ9wg5dMDhdIHaybmn6BgS7dzaZ41@thread.tacv2"
+      "Value": "19:d99148c5b25a47618ef63bdeed924468@thread.tacv2"
+    }
+  ],
+  "ConnectionReferences": [
+    {
+      "LogicalName": "tlc_sharedcommondataserviceforapps_633bb",
+      "ConnectionId": "e45e45a7-5922-4648-a855-e25b-e59778e0",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+    },
+    {
+      "LogicalName": "tlc_sharedcommondataserviceforapps_ef4d7",
+      "ConnectionId": "e45e45a7-5922-4648-a855-e25b-e59778e0",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+    },
+    {
+      "LogicalName": "tlc_sharedoffice365_b5950",
+      "ConnectionId": "806bc17d-114a-4c00-81a7-6fd0923e6f16",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+    },
+    {
+      "LogicalName": "tlc_sharedteams_ea2db",
+      "ConnectionId": "e98fe8e0-2aa5-4207-bcf6-eeb9-7108e486",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_teams"
     }
   ]
 }
