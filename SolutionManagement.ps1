@@ -9,6 +9,7 @@ pac auth select --index 2
 # Environment variable values for saving
 # MOCK channel ID: 19:9b3390f9b3ff4eb0821164774eeaae35@thread.tacv2
 # general channel ID: 19:VZvuSWaqpI8YfBoCJ9wg5dMDhdIHaybmn6BgS7dzaZ41@thread.tacv2
+# Curbside Consult channel: 19:d99148c5b25a47618ef63bdeed924468@thread.tacv2
 
 
 # EXPORT SOLUTIONS
