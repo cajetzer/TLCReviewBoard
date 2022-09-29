@@ -26,7 +26,7 @@
                         </labels>
                         <control id="tlc_submitready" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="tlc_submitready" disabled="false" uniqueid="{c55c4bfc-c89b-4ca8-b283-90879cd44c9c}" />
                       </cell>
-                      <cell id="{36d14daa-dc53-4fe2-9d88-d43ef39d3ce5}" locklevel="0" colspan="1" rowspan="5" auto="true">
+                      <cell id="{36d14daa-dc53-4fe2-9d88-d43ef39d3ce5}" locklevel="0" colspan="1" rowspan="11" auto="true">
                         <labels>
                           <label description="What do you want to get out of working with the Review Board?" languagecode="1033" />
                         </labels>
@@ -63,54 +63,6 @@
                           <label description="Scenario Sponsor (MSFT)" languagecode="1033" />
                         </labels>
                         <control id="tlc_scenariosponsorid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tlc_scenariosponsorid" disabled="false" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell locklevel="0" id="{dd1b718e-4532-4e92-80ac-bd26c73f6ebe}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                      <cell locklevel="0" id="{92121857-8e2b-441f-90e1-b0e5c7a4cd0e}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                    <row>
-                      <cell locklevel="0" id="{eded0bea-3b8f-49ea-952e-85ad363e6923}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                      <cell locklevel="0" id="{1f1b9381-8e25-441d-86c3-cbec6b7d8857}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                    <row>
-                      <cell locklevel="0" id="{130aec39-be82-402d-acdc-1b6367d357e0}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                      <cell locklevel="0" id="{9cdc62d1-c004-46f7-9207-087ecaaf4dde}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                    </row>
-                    <row>
-                      <cell locklevel="0" id="{fd55b167-8f2e-4ffa-abaf-027b484f95dc}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
-                      <cell locklevel="0" id="{3a53120e-951c-47ef-b906-5677c9f3ace9}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
                       </cell>
                     </row>
                   </rows>

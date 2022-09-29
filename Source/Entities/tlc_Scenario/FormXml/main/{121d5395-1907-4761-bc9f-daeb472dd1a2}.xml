@@ -26,7 +26,7 @@
                         </labels>
                         <control id="tlc_scenariostatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tlc_scenariostatus" disabled="false" />
                       </cell>
-                      <cell id="{bed0be47-5504-41ee-addc-4d5b1c13e1e9}" locklevel="0" colspan="1" rowspan="1">
+                      <cell id="{bed0be47-5504-41ee-addc-4d5b1c13e1e9}" locklevel="0" colspan="1" rowspan="11">
                         <labels>
                           <label description=" What do you want to get out of working with the Review Board?" languagecode="1033" />
                         </labels>
@@ -40,11 +40,6 @@
                         </labels>
                         <control id="tlc_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tlc_name" />
                       </cell>
-                      <cell locklevel="0" id="{3b133e60-7251-4d48-81c9-14f2ec977056}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
                     </row>
                     <row>
                       <cell id="{1392cc60-39d4-490a-803f-67eae94ece3f}" locklevel="0" colspan="1" rowspan="1">
@@ -52,11 +47,6 @@
                           <label description="Customer and TPID" languagecode="1033" />
                         </labels>
                         <control id="tlc_customertext" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tlc_customertext" disabled="false" />
-                      </cell>
-                      <cell locklevel="0" id="{8b765727-0fcb-4b9e-a217-50088fc8373d}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
                       </cell>
                     </row>
                     <row>
@@ -66,11 +56,6 @@
                         </labels>
                         <control id="tlc_scenariosponsorid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tlc_scenariosponsorid" disabled="false" />
                       </cell>
-                      <cell locklevel="0" id="{320ebd84-ce4b-4a81-b6f6-e885a93f1da3}">
-                        <labels>
-                          <label description="" languagecode="1033" />
-                        </labels>
-                      </cell>
                     </row>
                     <row>
                       <cell id="{107786f7-305e-4089-9c88-3c02ac81f3b6}" locklevel="0" colspan="1" rowspan="1">
@@ -79,7 +64,92 @@
                         </labels>
                         <control id="tlc_assignedcoach" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tlc_assignedcoach" disabled="false" />
                       </cell>
-                      <cell locklevel="0" id="{9dbb7c0b-4023-44d9-81a2-cb929aed1533}">
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{e671fdbe-0a61-4097-9dbf-5b0865464493}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{a0228133-c280-4f22-9c44-ef16c4f286b5}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{98fd7bd6-8fac-4cf6-aa18-a96f0b302bf1}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{4bb02922-99a2-44e0-83e7-f6796f4d4ac2}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{3fec795b-cf77-4cb9-9056-99b70a424956}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{d47362ec-deb1-4e1f-bda7-084cf961764b}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{2da99a21-c890-477c-b886-8ecc8a300172}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{3b133e60-7251-4d48-81c9-14f2ec977056}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{85d9316c-6dfd-4f74-b1cf-49e666f12512}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{b6092ac9-ae83-4d8e-baa0-424a4473ecf5}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{b1eefb49-2ce8-455b-a429-80bbcae6e424}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{3876239a-d057-4390-8ab6-0077958672bd}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{9b8b3a41-6d6f-418e-a9f1-3e5f0db8f362}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{e06c8274-5030-4636-97ee-03f98ceccd2a}">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
