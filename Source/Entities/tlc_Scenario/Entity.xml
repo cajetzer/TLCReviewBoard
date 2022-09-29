@@ -799,10 +799,10 @@
           <MaxLength>1000</MaxLength>
           <Length>2000</Length>
           <displaynames>
-            <displayname description="Desired End State" languagecode="1033" />
+            <displayname description="Desired Capabilities" languagecode="1033" />
           </displaynames>
           <Descriptions>
-            <Description description="Describe the customer's desired end state including high level functional requirements" languagecode="1033" />
+            <Description description="Describe the customer's desired features and capabilities, including any high level functional and technical requirements" languagecode="1033" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="tlc_Name">

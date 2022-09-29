@@ -20,6 +20,14 @@
                   </labels>
                   <rows>
                     <row>
+                      <cell id="{796eb76a-a5f2-4682-ac57-11271572ca97}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Scenario Status" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_scenariostatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tlc_scenariostatus" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{6f4047b7-757f-40ec-9b1f-3223a5da613b}">
                         <labels>
                           <label description="Scenario Summary" languagecode="1033" />
@@ -41,14 +49,6 @@
                           <label description="Scenario Sponsor (MSFT)" languagecode="1033" />
                         </labels>
                         <control id="tlc_scenariosponsorid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tlc_scenariosponsorid" disabled="false" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{796eb76a-a5f2-4682-ac57-11271572ca97}" locklevel="0" colspan="1" rowspan="1">
-                        <labels>
-                          <label description="Scenario Status" languagecode="1033" />
-                        </labels>
-                        <control id="tlc_scenariostatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tlc_scenariostatus" disabled="false" />
                       </cell>
                     </row>
                     <row>
@@ -92,7 +92,7 @@
                     <row>
                       <cell id="{bc8acc36-010b-4168-b4da-935a7e102a92}" locklevel="0" colspan="1" rowspan="10">
                         <labels>
-                          <label description="Desired End State" languagecode="1033" />
+                          <label description="Desired Capabilities" languagecode="1033" />
                         </labels>
                         <control id="tlc_desiredendstate" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="tlc_desiredendstate" disabled="false" />
                       </cell>

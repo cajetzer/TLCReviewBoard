@@ -69,7 +69,7 @@
                     <row height="auto">
                       <cell id="{33ee8b21-eb07-4b6f-a0d4-6f49b25e79d5}" locklevel="0" colspan="1" rowspan="10" auto="false">
                         <labels>
-                          <label description="Desired Business Outcomes: problem statement and value of delivered solution. KPIs where possible!" languagecode="1033" />
+                          <label description="Desired Business Outcomes (problem statement and value of delivered solution. KPIs where possible!)" languagecode="1033" />
                         </labels>
                         <control id="tlc_desiredbusinessoutcomes" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="tlc_desiredbusinessoutcomes" disabled="false" />
                       </cell>
@@ -85,7 +85,7 @@
                     <row>
                       <cell id="{a8795e58-c96f-41bc-8e08-5e753e26389b}" locklevel="0" colspan="1" rowspan="10">
                         <labels>
-                          <label description="Desired End State: requirements or success criteria" languagecode="1033" />
+                          <label description="Desired Capabilities (functional and technical requirements)" languagecode="1033" />
                         </labels>
                         <control id="tlc_desiredendstate" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="tlc_desiredendstate" disabled="false" />
                       </cell>
@@ -134,9 +134,9 @@
                     </row>
                   </rows>
                 </section>
-                <section showlabel="false" showbar="false" id="{fe44ac52-f28b-464b-9e9d-974fb5f74dee}" IsUserDefined="0" height="auto" labelid="{19af05d8-22a8-4324-9e4f-5da0eaa42fdd}">
+                <section showlabel="true" showbar="false" id="{fe44ac52-f28b-464b-9e9d-974fb5f74dee}" IsUserDefined="0" height="auto" labelid="{19af05d8-22a8-4324-9e4f-5da0eaa42fdd}" name="notes">
                   <labels>
-                    <label description="Notes" languagecode="1033" />
+                    <label description="Add notes &amp; attachments (save first)" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
