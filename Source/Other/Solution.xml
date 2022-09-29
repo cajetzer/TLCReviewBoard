@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.22083.172" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.22084.202" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>TechReview</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Tech Review" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.1.0.11</Version>
+    <Version>1.1.0.12</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>HlsTechLeadershipCouncil</UniqueName>
@@ -117,7 +117,7 @@
         <Dependent type="80" schemaName="tlc_ReviewBoardRequests" displayName="Review Board Requests" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2208.3010)" />
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2208.4006)" />
         <Dependent type="60" displayName="Review Board Request" parentDisplayName="Scenario" id="{1501d341-3812-ec11-b6e6-000d3a5671e3}" />
       </MissingDependency>
     </MissingDependencies>

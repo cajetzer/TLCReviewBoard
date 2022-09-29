@@ -11,9 +11,11 @@
     <RolePrivilege name="prvAppendToNote" level="Basic" />
     <RolePrivilege name="prvAppendTotlc_Scenario" level="Basic" />
     <RolePrivilege name="prvAppendToTranslationProcess" level="Global" />
+    <RolePrivilege name="prvAppendToUser" level="Global" />
     <RolePrivilege name="prvAppendToWorkflow" level="Global" />
     <RolePrivilege name="prvAppendToWorkflowSession" level="Basic" />
     <RolePrivilege name="prvAppendTranslationProcess" level="Global" />
+    <RolePrivilege name="prvAppendUser" level="Global" />
     <RolePrivilege name="prvAppendWorkflow" level="Basic" />
     <RolePrivilege name="prvAppendWorkflowSession" level="Basic" />
     <RolePrivilege name="prvAssignAsyncOperation" level="Basic" />
