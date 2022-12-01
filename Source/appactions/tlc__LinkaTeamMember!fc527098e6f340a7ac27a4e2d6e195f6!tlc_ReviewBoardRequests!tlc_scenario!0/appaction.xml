@@ -1,0 +1,30 @@
+<appaction uniquename="tlc__LinkaTeamMember!fc527098e6f340a7ac27a4e2d6e195f6!tlc_ReviewBoardRequests!tlc_scenario!0">
+  <appmoduleid>
+    <uniquename>tlc_ReviewBoardRequests</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="Link a Team Member">
+    <label description="Link a Team Member" languagecode="1033" />
+  </buttonlabeltext>
+  <buttonsequencepriority>15.0000000000</buttonsequencepriority>
+  <context>1</context>
+  <contextentity>
+    <logicalname>tlc_scenario</logicalname>
+  </contextentity>
+  <contextvalue>tlc_scenario</contextvalue>
+  <fonticon>People</fonticon>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <isgrouptitlehidden>0</isgrouptitlehidden>
+  <location>0</location>
+  <name>LinkaTeamMember!fc527098e6f340a7ac27a4e2d6e195f6</name>
+  <onclickeventjavascriptfunctionname>openAddPerson</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[{"type":4}]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>a9ca0be7-7a5c-ed11-9562-000d3a1ba68c</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+  <visibilitytype>0</visibilitytype>
+</appaction>

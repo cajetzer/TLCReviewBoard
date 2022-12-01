@@ -137,6 +137,37 @@
                     </row>
                   </rows>
                 </section>
+                <section name="general_tab_section_8" id="54f33d5e-5a85-4618-9907-52833d8f925d" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Team Members (save first)" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{537b45df-6a85-4061-bb1b-eaf7bc1d556d}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="New SG control 1667858167967" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>6</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>true</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>aaduser</TargetEntityType>
+                            <ViewId>{6E9F045C-5A5C-ED11-9562-000D3A190BDF}</ViewId>
+                            <ViewIds>{1F1810E2-2903-402F-92BC-DB11EC075C24},{6E9F045C-5A5C-ED11-9562-000D3A190BDF}</ViewIds>
+                            <RelationshipName>tlc_Scenario_aaduser_aaduser</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
                 <section showlabel="true" showbar="false" id="{fe44ac52-f28b-464b-9e9d-974fb5f74dee}" IsUserDefined="0" height="auto" labelid="{19af05d8-22a8-4324-9e4f-5da0eaa42fdd}" name="notes">
                   <labels>
                     <label description="Add notes &amp; attachments (save first)" languagecode="1033" />
