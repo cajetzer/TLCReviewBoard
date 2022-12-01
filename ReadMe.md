@@ -4,7 +4,7 @@ This repo contains the solutions and unpacked code for the Cross Solution Review
 # Release Notes
 | Version  | Date in Prod   | Updates Included   |
 |-------------- | -------------- | -------------- |
-| 1.1.0.14   | 11/30/2022     | added *Link a Team Member* functionality to the request |
+| 1.1.0.14   | 11/30/2022     | added *Link a Team Member* functionality to the Scenario |
 | 1.1.0.13   | 9/29/2022     | fixed size of help needed text box |
 | 1.1.0.12   | 9/29/2022     | new 'help needed' field<br>usability updates to Scenario forms |
 |  | 9/23/2022 | update env variable to post to Curb Consult channel |
