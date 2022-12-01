@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{6e9f045c-5a5c-ed11-9562-000d3a190bdf}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="displayname" select="1" icon="1" preview="1">
+        <row name="result" id="aaduserid">
+          <cell name="displayname" width="200" />
+          <cell name="jobtitle" width="207" />
+          <cell name="mail" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="aaduser">
+          <attribute name="displayname" />
+          <attribute name="aaduserid" />
+          <filter type="and">
+            <condition attribute="usertype" operator="eq" value="Member" />
+            <condition attribute="accountenabled" operator="eq" value="1" />
+            <condition attribute="jobtitle" operator="not-null" />
+            <condition attribute="userprincipalname" operator="not-like" value="v-%" />
+          </filter>
+          <attribute name="mail" />
+          <attribute name="jobtitle" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.1.0.14</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Microsoft Users" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

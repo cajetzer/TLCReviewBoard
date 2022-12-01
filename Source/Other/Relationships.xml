@@ -4,7 +4,9 @@
   <EntityRelationship Name="lk_tlc_scenario_createdby" />
   <EntityRelationship Name="lk_tlc_scenario_modifiedby" />
   <EntityRelationship Name="owner_tlc_scenario" />
+  <EntityRelationship Name="sh_StoryContributor_SystemUser_SystemUser" />
   <EntityRelationship Name="team_tlc_scenario" />
+  <EntityRelationship Name="tlc_Scenario_aaduser_aaduser" />
   <EntityRelationship Name="tlc_Scenario_ScenarioSponsorId_SystemUser" />
   <EntityRelationship Name="tlc_tlc_scenario_tlc_AssignedCoach_system" />
   <EntityRelationship Name="user_tlc_scenario" />
