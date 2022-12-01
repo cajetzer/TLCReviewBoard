@@ -9,10 +9,12 @@
   <EntityRelationships />
   <OrganizationSettings />
   <optionsets />
+  <WebResources />
   <CustomControls />
   <AppModuleSiteMaps />
   <AppModules />
   <EntityDataProviders />
+  <CanvasApps />
   <connectionreferences>
     <connectionreference connectionreferencelogicalname="tlc_sharedcommondataserviceforapps_633bb">
       <connectionreferencedisplayname>Microsoft Dataverse TechReview-633bb</connectionreferencedisplayname>

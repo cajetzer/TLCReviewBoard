@@ -14,7 +14,7 @@
         <Titles>
           <Title LCID="1033" Title="Request Info" />
         </Titles>
-        <SubArea Id="NewSubarea_0a409b02" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="tlc_scenario" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
+        <SubArea Id="NewSubarea_0a409b02" VectorIcon="/WebResources/AppCommon/ControlWS/SummaryPageImages/ProductCatalog.svg" Icon="/WebResources/AppCommon/ControlWS/SummaryPageImages/ProductCatalog.svg" Entity="tlc_scenario" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" />
       </Group>
     </Area>
   </SiteMap>

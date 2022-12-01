@@ -10,6 +10,7 @@
   <ClientType>4</ClientType>
   <NavigationType>0</NavigationType>
   <AppModuleComponents>
+    <AppModuleComponent type="1" schemaName="aaduser" />
     <AppModuleComponent type="1" schemaName="tlc_scenario" />
     <AppModuleComponent type="60" id="{1501d341-3812-ec11-b6e6-000d3a5671e3}" />
     <AppModuleComponent type="60" id="{121d5395-1907-4761-bc9f-daeb472dd1a2}" />
@@ -25,4 +26,13 @@
   <LocalizedNames>
     <LocalizedName description="Review Board Requests" languagecode="1033" />
   </LocalizedNames>
+  <appelements>
+    <appelement uniquename="tlc_tlc_ReviewBoardRequests_canvasappid_tlc_connectperson_c7d7a">
+      <canvasappid>
+        <name>tlc_connectperson_c7d7a</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>tlc_tlc_ReviewBoardRequests_canvasappid_tlc_connectperson_c7d7a</name>
+    </appelement>
+  </appelements>
 </AppModule>

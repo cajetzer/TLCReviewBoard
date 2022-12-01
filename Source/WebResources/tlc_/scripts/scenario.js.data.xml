@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{a9ca0be7-7a5c-ed11-9562-000d3a1ba68c}</WebResourceId>
+  <Name>tlc_/scripts/scenario.js</Name>
+  <DisplayName>scripts/scenario.js</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.1.0.14</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/tlc_scriptsscenariojsA9CA0BE7-7A5C-ED11-9562-000D3A1BA68C</FileName>
+</WebResource>
