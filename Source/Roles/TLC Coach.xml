@@ -3,9 +3,11 @@
   <IsCustomizable>1</IsCustomizable>
   <RolePrivileges>
     <RolePrivilege name="prvActivateSynchronousWorkflow" level="Basic" />
+    <RolePrivilege name="prvAppendaaduser" level="Global" />
     <RolePrivilege name="prvAppendNewProcess" level="Global" />
     <RolePrivilege name="prvAppendNote" level="Global" />
     <RolePrivilege name="prvAppendtlc_Scenario" level="Global" />
+    <RolePrivilege name="prvAppendToaaduser" level="Global" />
     <RolePrivilege name="prvAppendToAsyncOperation" level="Basic" />
     <RolePrivilege name="prvAppendToNewProcess" level="Global" />
     <RolePrivilege name="prvAppendToNote" level="Global" />
@@ -40,6 +42,7 @@
     <RolePrivilege name="prvDeleteWorkflow" level="Basic" />
     <RolePrivilege name="prvDeleteWorkflowSession" level="Basic" />
     <RolePrivilege name="prvFlow" level="Global" />
+    <RolePrivilege name="prvReadaaduser" level="Global" />
     <RolePrivilege name="prvReadAppConfigMaster" level="Global" />
     <RolePrivilege name="prvReadAppModule" level="Global" />
     <RolePrivilege name="prvReadAsyncOperation" level="Basic" />
