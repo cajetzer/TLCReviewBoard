@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.22103.214" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.22123.204" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>TechReview</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Tech Review" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.1.0.14</Version>
+    <Version>1.1.0.15</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>HlsTechLeadershipCouncil</UniqueName>
@@ -78,8 +78,9 @@
       </Addresses>
     </Publisher>
     <RootComponents>
-      <RootComponent type="1" schemaName="aaduser" behavior="0" />
-      <RootComponent type="1" schemaName="systemuser" behavior="0" />
+      <RootComponent type="1" schemaName="aaduser" behavior="2" />
+      <RootComponent type="1" schemaName="systemuser" behavior="2" />
+      <RootComponent type="1" schemaName="tlc_consult" behavior="0" />
       <RootComponent type="1" schemaName="tlc_scenario" behavior="0" />
       <RootComponent type="20" id="{071d5766-ef0c-ec11-b6e6-00224822d42b}" behavior="0" />
       <RootComponent type="20" id="{86950e47-ef0c-ec11-b6e6-00224822d42b}" behavior="0" />
@@ -87,6 +88,7 @@
       <RootComponent type="29" id="{226a7c88-2e22-ec11-b6e6-000d3a4d7c9e}" behavior="0" />
       <RootComponent type="29" id="{34bbffa3-8362-ec11-8f8f-0022483120e7}" behavior="0" />
       <RootComponent type="29" id="{3ce5252d-8462-ec11-8f8f-0022483120e7}" behavior="0" />
+      <RootComponent type="29" id="{d7ac5279-7b72-ed11-9562-000d3a1ba68c}" behavior="0" />
       <RootComponent type="29" id="{f8edcb60-2139-ed11-9db0-000d3a8aae43}" behavior="0" />
       <RootComponent type="300" schemaName="tlc_connectperson_c7d7a" behavior="0" />
       <RootComponent type="61" schemaName="tlc_/scripts/scenario.js" behavior="0" />
@@ -96,99 +98,83 @@
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
-        <Required type="1" schemaName="aaduser" displayName="AAD User" solution="MetadataExtension (1.0.2.24)" />
+        <Required type="1" schemaName="aaduser" displayName="AAD User" solution="MetadataExtension (1.0.2.29)" />
         <Dependent type="1" schemaName="aaduser" displayName="AAD User" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="aaduser" displayName="AAD User" solution="MetadataExtension (1.0.2.24)" />
+        <Required type="1" schemaName="aaduser" displayName="AAD User" solution="MetadataExtension (1.0.2.29)" />
         <Dependent type="26" schemaName="Microsoft Users" displayName="Microsoft Users" parentSchemaName="aaduser" parentDisplayName="AAD User" id="{6e9f045c-5a5c-ed11-9562-000d3a190bdf}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="aaduser" displayName="AAD User" solution="MetadataExtension (1.0.2.24)" />
+        <Required type="1" schemaName="aaduser" displayName="AAD User" solution="MetadataExtension (1.0.2.29)" />
         <Dependent type="300" schemaName="tlc_connectperson_c7d7a" displayName="Connect Person" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="aaduser" displayName="AAD User" solution="MetadataExtension (1.0.2.24)" />
-        <Dependent type="50" schemaName="aaduser:RibbonDiffXml" displayName="aaduser:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="aaduser" displayName="AAD User" solution="MetadataExtension (1.0.2.24)" />
+        <Required type="1" schemaName="aaduser" displayName="AAD User" solution="MetadataExtension (1.0.2.29)" />
         <Dependent type="60" displayName="Scenario Review" parentDisplayName="Scenario" id="{121d5395-1907-4761-bc9f-daeb472dd1a2}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="aaduser" displayName="AAD User" solution="MetadataExtension (1.0.2.24)" />
+        <Required type="1" schemaName="aaduser" displayName="AAD User" solution="MetadataExtension (1.0.2.29)" />
         <Dependent type="60" displayName="Review Board Request" parentDisplayName="Scenario" id="{1501d341-3812-ec11-b6e6-000d3a5671e3}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="aaduser" displayName="AAD User" solution="MetadataExtension (1.0.2.24)" />
+        <Required type="1" schemaName="aaduser" displayName="AAD User" solution="MetadataExtension (1.0.2.29)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Consult" id="{d3c031d5-2f05-403d-a54e-992f9d41e5ac}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="aaduser" displayName="AAD User" solution="MetadataExtension (1.0.2.29)" />
         <Dependent type="80" schemaName="tlc_ReviewBoardRequests" displayName="Review Board Requests" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="aaduser" displayName="AAD User" solution="MetadataExtension (1.0.2.24)" />
+        <Required type="1" schemaName="aaduser" displayName="AAD User" solution="MetadataExtension (1.0.2.29)" />
         <Dependent type="appaction" displayName="tlc__LinkaPerson!345a27071d734a219a62fde7b6f6dc6e!tlc_ReviewBoardRequests!aaduser!2" id.uniquename="tlc__LinkaPerson!345a27071d734a219a62fde7b6f6dc6e!tlc_ReviewBoardRequests!aaduser!2" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="1" schemaName="appusersetting" displayName="Model-Driven App User Setting" solution="AppModule (9.1.22073.220708001)" />
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="bot" displayName="Chatbot" solution="PowerVirtualAgents (2.0.0.339)">
-          <package>msdynce_CustomerCareIntelligenceBots_Anchor (2.0.0.339)</package>
-        </Required>
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="msfp_survey" displayName="Customer Voice survey" solution="MicrosoftFormsPro (2.0.0.38)">
-          <package>MicrosoftFormsPro (2.0.0.38)</package>
-        </Required>
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="1" schemaName="usermobileofflineprofilemembership" displayName="UserMobileOfflineProfileMembership" solution="MobileOfflineMembership (1.0.0.3)" />
-        <Dependent type="1" schemaName="systemuser" displayName="User" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="2" schemaName="aaduserid" displayName="AAD user id" parentSchemaName="aaduser" parentDisplayName="AAD User" solution="MetadataExtension (1.0.2.24)" />
+        <Required type="2" schemaName="aaduserid" displayName="AAD user id" parentSchemaName="aaduser" parentDisplayName="AAD User" solution="MetadataExtension (1.0.2.29)" />
         <Dependent type="26" schemaName="Microsoft Users" displayName="Microsoft Users" parentSchemaName="aaduser" parentDisplayName="AAD User" id="{6e9f045c-5a5c-ed11-9562-000d3a190bdf}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="2" schemaName="accountenabled" displayName="AAD User Account Enabled" parentSchemaName="aaduser" parentDisplayName="AAD User" solution="MetadataExtension (1.0.2.24)" />
+        <Required type="2" schemaName="accountenabled" displayName="AAD User Account Enabled" parentSchemaName="aaduser" parentDisplayName="AAD User" solution="MetadataExtension (1.0.2.29)" />
         <Dependent type="26" schemaName="Microsoft Users" displayName="Microsoft Users" parentSchemaName="aaduser" parentDisplayName="AAD User" id="{6e9f045c-5a5c-ed11-9562-000d3a190bdf}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="2" schemaName="displayname" displayName="Display Name" parentSchemaName="aaduser" parentDisplayName="AAD User" solution="MetadataExtension (1.0.2.24)" />
+        <Required type="2" schemaName="displayname" displayName="Display Name" parentSchemaName="aaduser" parentDisplayName="AAD User" solution="MetadataExtension (1.0.2.29)" />
         <Dependent type="26" schemaName="Microsoft Users" displayName="Microsoft Users" parentSchemaName="aaduser" parentDisplayName="AAD User" id="{6e9f045c-5a5c-ed11-9562-000d3a190bdf}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="2" schemaName="jobtitle" displayName="Job Title" parentSchemaName="aaduser" parentDisplayName="AAD User" solution="MetadataExtension (1.0.2.24)" />
+        <Required type="2" schemaName="jobtitle" displayName="Job Title" parentSchemaName="aaduser" parentDisplayName="AAD User" solution="MetadataExtension (1.0.2.29)" />
         <Dependent type="26" schemaName="Microsoft Users" displayName="Microsoft Users" parentSchemaName="aaduser" parentDisplayName="AAD User" id="{6e9f045c-5a5c-ed11-9562-000d3a190bdf}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="2" schemaName="mail" displayName="Mail" parentSchemaName="aaduser" parentDisplayName="AAD User" solution="MetadataExtension (1.0.2.24)" />
+        <Required type="2" schemaName="mail" displayName="Mail" parentSchemaName="aaduser" parentDisplayName="AAD User" solution="MetadataExtension (1.0.2.29)" />
         <Dependent type="26" schemaName="Microsoft Users" displayName="Microsoft Users" parentSchemaName="aaduser" parentDisplayName="AAD User" id="{6e9f045c-5a5c-ed11-9562-000d3a190bdf}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="2" schemaName="userprincipalname" displayName="User Principal Name" parentSchemaName="aaduser" parentDisplayName="AAD User" solution="MetadataExtension (1.0.2.24)" />
+        <Required type="2" schemaName="userprincipalname" displayName="User Principal Name" parentSchemaName="aaduser" parentDisplayName="AAD User" solution="MetadataExtension (1.0.2.29)" />
         <Dependent type="26" schemaName="Microsoft Users" displayName="Microsoft Users" parentSchemaName="aaduser" parentDisplayName="AAD User" id="{6e9f045c-5a5c-ed11-9562-000d3a190bdf}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="2" schemaName="usertype" displayName="User Type" parentSchemaName="aaduser" parentDisplayName="AAD User" solution="MetadataExtension (1.0.2.24)" />
+        <Required type="2" schemaName="usertype" displayName="User Type" parentSchemaName="aaduser" parentDisplayName="AAD User" solution="MetadataExtension (1.0.2.29)" />
         <Dependent type="26" schemaName="Microsoft Users" displayName="Microsoft Users" parentSchemaName="aaduser" parentDisplayName="AAD User" id="{6e9f045c-5a5c-ed11-9562-000d3a190bdf}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="26" schemaName="All AAD users" displayName="All AAD users" parentSchemaName="aaduser" parentDisplayName="AAD User" solution="MetadataExtension (1.0.2.24)" id="{1f1810e2-2903-402f-92bc-db11ec075c24}" />
+        <Required type="26" schemaName="All AAD users" displayName="All AAD users" parentSchemaName="aaduser" parentDisplayName="AAD User" solution="MetadataExtension (1.0.2.29)" id="{1f1810e2-2903-402f-92bc-db11ec075c24}" />
         <Dependent type="60" displayName="Scenario Review" parentDisplayName="Scenario" id="{121d5395-1907-4761-bc9f-daeb472dd1a2}" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="26" schemaName="All AAD users" displayName="All AAD users" parentSchemaName="aaduser" parentDisplayName="AAD User" solution="MetadataExtension (1.0.2.24)" id="{1f1810e2-2903-402f-92bc-db11ec075c24}" />
+        <Required type="26" schemaName="All AAD users" displayName="All AAD users" parentSchemaName="aaduser" parentDisplayName="AAD User" solution="MetadataExtension (1.0.2.29)" id="{1f1810e2-2903-402f-92bc-db11ec075c24}" />
         <Dependent type="60" displayName="Review Board Request" parentDisplayName="Scenario" id="{1501d341-3812-ec11-b6e6-000d3a5671e3}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All AAD users" displayName="All AAD users" parentSchemaName="aaduser" parentDisplayName="AAD User" solution="MetadataExtension (1.0.2.29)" id="{1f1810e2-2903-402f-92bc-db11ec075c24}" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Consult" id="{d3c031d5-2f05-403d-a54e-992f9d41e5ac}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
         <Dependent type="80" schemaName="tlc_ReviewBoardRequests" displayName="Review Board Requests" />
       </MissingDependency>
       <MissingDependency>
-        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2210.3015)" />
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2212.3011)" />
         <Dependent type="60" displayName="Review Board Request" parentDisplayName="Scenario" id="{1501d341-3812-ec11-b6e6-000d3a5671e3}" />
       </MissingDependency>
     </MissingDependencies>

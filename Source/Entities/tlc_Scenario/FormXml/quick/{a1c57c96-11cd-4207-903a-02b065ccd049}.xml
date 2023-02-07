@@ -28,11 +28,59 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{65232e5a-6016-4b6c-92a4-fede0346e8ad}">
+                      <cell id="{65232e5a-6016-4b6c-92a4-fede0346e8ad}" visible="false">
                         <labels>
                           <label description="Owner" languagecode="1033" />
                         </labels>
                         <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0ce83f4a-ef0f-4c61-80f3-48dc2c6fe2a2}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Scenario Sponsor (MSFT)" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_scenariosponsorid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tlc_scenariosponsorid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3bd11f11-9d80-4bc4-a757-3e0708fef6c4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Customer and TPID" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_customertext" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tlc_customertext" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{908f5704-de81-4954-b1b7-90bbe3e5c229}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Scenario Status" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_scenariostatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tlc_scenariostatus" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8bc7f60f-4e85-41f4-9c7e-b33b9bfe6a19}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Help Needed" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_helpneeded" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="tlc_helpneeded" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1fb946a5-9d0e-4860-8d87-0ad874293912}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Desired Business Outcomes" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_desiredbusinessoutcomes" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="tlc_desiredbusinessoutcomes" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a7f7d7f5-b1ea-42dd-96f0-08503b2f10c5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Desired Capabilities" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_desiredendstate" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="tlc_desiredendstate" disabled="false" />
                       </cell>
                     </row>
                   </rows>
@@ -42,6 +90,9 @@
           </columns>
         </tab>
       </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>

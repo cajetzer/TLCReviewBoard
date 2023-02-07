@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{d3c031d5-2f05-403d-a54e-992f9d41e5ac}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{6fa42ea4-a8e1-488f-97b5-370b6838c6a3}" IsUserDefined="1" name="tab_general">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{4d693e5c-b7b8-4174-b088-9c21c44935bc}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{da8acff2-ceac-4bed-885b-c2ac38ded4ce}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tlc_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{96d47dde-59dc-449d-8493-5a6779900811}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Consult Date" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_consultdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="tlc_consultdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3f2c19ae-4573-4ac7-8036-f727f7541492}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Scenario" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_scenario" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tlc_scenario" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{84ee3337-d962-4251-a8eb-3acecd173b9d}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="New QV control 1670010081467" languagecode="1033" />
+                        </labels>
+                        <control id="QuickviewControl1670010081467" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="tlc_scenario">
+                          <parameters>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="tlc_scenario"&gt;a1c57c96-11cd-4207-903a-02b065ccd049&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="_section_219" id="941dc600-86db-4f81-99f5-da663b8d85d4" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Meeting Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{eaf2248b-0ba4-478d-9bb8-5f8409239ae3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Recording" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_recording" classid="{71716B6C-711E-476C-8AB8-5D11542BFB47}" datafieldname="tlc_recording" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d8171c33-bf19-4071-a8b1-09ed12668734}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Consult Notes" languagecode="1033" />
+                        </labels>
+                        <control id="tlc_consultnotes" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tlc_consultnotes" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{5af4a763-0c6d-4a1e-9c1c-a71630136bbf}" rowspan="4" colspan="1" auto="false">
+                        <labels>
+                          <label description="Contributors" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_contributors" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>aaduser</TargetEntityType>
+                            <ViewId>{6E9F045C-5A5C-ED11-9562-000D3A190BDF}</ViewId>
+                            <ViewIds>{1F1810E2-2903-402F-92BC-DB11EC075C24},{6E9F045C-5A5C-ED11-9562-000D3A190BDF}</ViewIds>
+                            <RelationshipName>tlc_Consult_aaduser_contributor</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{9145adbd-c4fa-4a85-8615-87fbc435df69}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{c795d28f-c09d-444c-973f-786c8228746b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{2a3df70e-f805-4d15-839e-0323305713d1}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1980af5e-6e37-422c-b920-57d87a018770}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{98af7275-e97d-45da-977a-8e65e8cea972}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{12b59669-a71c-4b6d-bdcd-b0c5db4cb53f}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{3eaa2668-2fdd-4ee6-a501-ff194d69c51b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a4d3d0b0-df60-4bf4-a101-5cfccd2d0289}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{fc978c99-ebc0-4d48-ad4a-2d08b6e04be2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

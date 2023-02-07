@@ -286,6 +286,48 @@
             </column>
           </columns>
         </tab>
+        <tab name="tab_consults" id="1efa6ae4-4081-4e93-82de-e4a512f86ea9" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Consults" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" id="235ba2ee-e7c9-4206-9073-3aec694f5761" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{83536290-437b-4edd-96d7-a456137e9309}" rowspan="4" colspan="1" auto="false" showlabel="false">
+                        <labels>
+                          <label description="Consults" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_2" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <TargetEntityType>tlc_consult</TargetEntityType>
+                            <ViewId>{54F46BA5-50F8-4A78-A9AA-754C24F2AEAD}</ViewId>
+                            <ViewIds>{54F46BA5-50F8-4A78-A9AA-754C24F2AEAD}</ViewIds>
+                            <RelationshipName>tlc_Consult_tlc_Scenario_tlc_Scenario</RelationshipName>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
       </tabs>
       <header id="{4835ccf6-395e-4d2b-8d16-7a518fcc50a1}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
         <rows>

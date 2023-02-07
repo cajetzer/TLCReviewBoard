@@ -1,0 +1,100 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "impersonation": {},
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "tlc_sharedcommondataserviceforapps_633bb"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "OnCreate_onChange_tlc_Consult.tlc_ConsultDate": {
+          "metadata": {
+            "operationMetadataId": "d663587d-5c6a-481e-8808-1967b1399de9"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 4,
+              "subscriptionRequest/entityname": "tlc_consult",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filteringattributes": "tlc_consultdate",
+              "subscriptionRequest/name": "d7ac5279-7b72-ed11-9562-000d3a1ba68c"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Update_a_row": {
+          "runAfter": {
+            "Get_Scenario": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "172a1333-82c9-4ad6-bb04-45ebc612684d"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "UpdateRecord"
+            },
+            "parameters": {
+              "entityName": "tlc_consults",
+              "recordId": "@triggerOutputs()?['body/tlc_consultid']",
+              "item/tlc_name": "@{outputs('Get_Scenario')?['body/tlc_name']} - @{triggerOutputs()?['body/tlc_consultdate']}"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Get_Scenario": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "0aeda714-96a9-4fe9-8354-9b470a577808"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem"
+            },
+            "parameters": {
+              "entityName": "tlc_scenarios",
+              "recordId": "@triggerOutputs()?['body/_tlc_scenario_value']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

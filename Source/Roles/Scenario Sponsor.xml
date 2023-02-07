@@ -6,12 +6,12 @@
     <RolePrivilege name="prvAppendaaduser" level="Global" />
     <RolePrivilege name="prvAppendNewProcess" level="Global" />
     <RolePrivilege name="prvAppendNote" level="Basic" />
-    <RolePrivilege name="prvAppendtlc_Scenario" level="Basic" />
+    <RolePrivilege name="prvAppendtlc_Scenario" level="Global" />
     <RolePrivilege name="prvAppendToaaduser" level="Global" />
     <RolePrivilege name="prvAppendToAsyncOperation" level="Basic" />
     <RolePrivilege name="prvAppendToNewProcess" level="Global" />
     <RolePrivilege name="prvAppendToNote" level="Basic" />
-    <RolePrivilege name="prvAppendTotlc_Scenario" level="Basic" />
+    <RolePrivilege name="prvAppendTotlc_Scenario" level="Global" />
     <RolePrivilege name="prvAppendToTranslationProcess" level="Global" />
     <RolePrivilege name="prvAppendToUser" level="Global" />
     <RolePrivilege name="prvAppendToWorkflow" level="Global" />
