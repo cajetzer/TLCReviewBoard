@@ -754,8 +754,8 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <Format>text</Format>
-          <MaxLength>200</MaxLength>
-          <Length>400</Length>
+          <MaxLength>300</MaxLength>
+          <Length>600</Length>
           <displaynames>
             <displayname description="Consult Notes" languagecode="1033" />
           </displaynames>
@@ -834,8 +834,8 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <Format>url</Format>
-          <MaxLength>100</MaxLength>
-          <Length>200</Length>
+          <MaxLength>300</MaxLength>
+          <Length>600</Length>
           <displaynames>
             <displayname description="Recording" languagecode="1033" />
           </displaynames>

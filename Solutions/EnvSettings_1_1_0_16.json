@@ -1,0 +1,69 @@
+{
+  "EnvironmentVariables": [
+    {
+      "SchemaName": "tlc_NewRequestAlertChannel",
+      "Value": ""
+    }
+  ],
+  "ConnectionReferences": [
+    {
+      "LogicalName": "tlc_sharedcommondataserviceforapps_633bb",
+      "ConnectionId": "",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+    },
+    {
+      "LogicalName": "tlc_sharedcommondataserviceforapps_ef4d7",
+      "ConnectionId": "",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+    },
+    {
+      "LogicalName": "tlc_sharedoffice365users_2ae73",
+      "ConnectionId": "",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_office365users"
+    },
+    {
+      "LogicalName": "tlc_sharedoffice365_b5950",
+      "ConnectionId": "",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+    },
+    {
+      "LogicalName": "tlc_sharedteams_ea2db",
+      "ConnectionId": "",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_teams"
+    }
+  ],
+  "Workflows": [
+    {
+      "Name": "Set Consult Name",
+      "WorkflowId": "d7ac5279-7b72-ed11-9562-000d3a1ba68c",
+      "UserEmail": ""
+    },
+    {
+      "Name": "Post to Teams when new scenario is submitted",
+      "WorkflowId": "226a7c88-2e22-ec11-b6e6-000d3a4d7c9e",
+      "UserEmail": ""
+    },
+    {
+      "Name": "Email confirmation of submission",
+      "WorkflowId": "f8edcb60-2139-ed11-9db0-000d3a8aae43",
+      "UserEmail": ""
+    },
+    {
+      "Name": "Lock Ready to Submit unless Draft or Submitted",
+      "WorkflowId": "3ce5252d-8462-ec11-8f8f-0022483120e7",
+      "UserEmail": ""
+    },
+    {
+      "Name": "Scenario status based on Ready to Submit field",
+      "WorkflowId": "34bbffa3-8362-ec11-8f8f-0022483120e7",
+      "UserEmail": ""
+    }
+  ],
+  "CanvasApps": [
+    {
+      "AadGroupId": "00000000-0000-0000-0000-000000000000",
+      "Name": "tlc_connectperson_c7d7a",
+      "RoleName": null
+    }
+  ]
+}

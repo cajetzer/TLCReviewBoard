@@ -28,7 +28,7 @@
     <RolePrivilege name="prvCreateNewProcess" level="Global" />
     <RolePrivilege name="prvCreateNote" level="Basic" />
     <RolePrivilege name="prvCreateSharePointData" level="Global" />
-    <RolePrivilege name="prvCreatetlc_Scenario" level="Basic" />
+    <RolePrivilege name="prvCreatetlc_Scenario" level="Global" />
     <RolePrivilege name="prvCreateTranslationProcess" level="Global" />
     <RolePrivilege name="prvCreateUserApplicationMetadata" level="Basic" />
     <RolePrivilege name="prvCreateUserEntityUISettings" level="Basic" />
